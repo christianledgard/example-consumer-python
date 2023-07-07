@@ -1,0 +1,21 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "poetry install",
+      "command": "poetry install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "run consumer tests": {
+      "name": "run consumer tests",
+      "command": "poetry run pytest tests/consumer/test_products_consumer.py -v"
+    },
+    "poetry lock": {
+      "name": "poetry lock",
+      "command": "poetry lock"
+    }
+  }
+}
